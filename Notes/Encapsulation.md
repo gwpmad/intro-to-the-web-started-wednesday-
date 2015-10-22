@@ -83,4 +83,4 @@ Here in this example, the method_for_acceleration has been moved to private, and
 
 
 
-_Just like the wise geisha, mastering the Samurai with a coy flash of exposed wrist or ankle, so too can the Rubyist master the Class with correct exposure of variables and methods._
+_Just like the wise geisha, mastering the Samurai with a coy flash of exposed wrist or ankle, so too can the aspiring Rubyist master the Class with seductive exposure of variables and methods._
