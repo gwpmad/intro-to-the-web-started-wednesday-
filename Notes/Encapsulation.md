@@ -80,3 +80,7 @@ end
 ```
 
 Here in this example, the method_for_acceleration has been moved to private, and all the accessors have been removed - the Player class does not need to know what model the car is or be able to specify the engine_size and mass externally.
+
+
+
+_Just like the wise geisha, mastering the Samurai with a coy flash of exposed wrist or ankle, so too can the Rubyist master the Class with correct exposure of variables and methods._
