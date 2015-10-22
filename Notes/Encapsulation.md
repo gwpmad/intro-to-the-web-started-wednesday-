@@ -1,7 +1,7 @@
 - What is Encapsulation in Ruby? (3 sentences)
     Encapsulation is the practice of creating boundaries to contain the internal behaviour of the object. Good encapsulation prevents the internal behaviour (e.g. data) from being directly influenced by other objects, and in the long term, this reduces complexity and interdependence, and increases the modularity of your program. In the ideal situation, good encapsulation prevents internal changes to one class from breaking the interactions another class has with it.
 - Give an example of a poorly-encapsulated class that uses an attr_accessor. 
-    ```ruby
+```ruby
 class VideogameCar
   attr_accessor :mass, :engine_size, :method_for_acceleration, :hash_of_mass, :hash_of_engines
 
