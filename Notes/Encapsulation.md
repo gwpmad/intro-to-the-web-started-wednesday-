@@ -1,5 +1,7 @@
-- What is Encapsulation in Ruby? (3 sentences)
-    Encapsulation is the practice of creating boundaries to contain the internal behaviour of the object. Good encapsulation prevents the internal behaviour (e.g. data) from being directly influenced by other objects, and in the long term, this reduces complexity and interdependence, and increases the modularity of your program. In the ideal situation, good encapsulation prevents internal changes to one class from breaking the interactions another class has with it.
+- What is Encapsulation in Ruby?"
+
+Encapsulation is the practice of creating boundaries to contain the internal behaviour of the object. Good encapsulation prevents the internal behaviour (e.g. data) from being directly influenced by other objects, and in the long term, this reduces complexity and interdependence, and increases the modularity of your program. In the ideal situation, good encapsulation prevents internal changes to one class from breaking the interactions another class has with it.
+
 - Give an example of a poorly-encapsulated class that uses an attr_accessor. 
 ```ruby
 class VideogameCar
@@ -56,11 +58,12 @@ private_constant :HASH_OF_MASS, :HASH_OF_ENGINES
   end
 
   def drive(player_input)
-    @acceleration = method_for_acceleration(player_input, @engine_size , @mass)
+    @acceleration = method_for_acceleration(player_input)
   end
 
 private
-  def method_for_acceleration
+  def method_for_acceleration(input_value)
+    method(@engine_size, @mass) + method2(input_value)
     #boring complex code, with blocks calling blocks inside of procs to send define methods into classes
   end
 
@@ -76,4 +79,4 @@ class Player
 end
 ```
 
-Timebox: 1 hour
+Here in this example, the method_for_acceleration has been moved to private, and all the accessors have been removed - the Player class does not need to know what model the car is or be able to specify the engine_size and mass externally.
