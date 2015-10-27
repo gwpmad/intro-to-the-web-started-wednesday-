@@ -16,7 +16,12 @@ get '/penguin' do
   erb :penguin
 end
 
-get '/cat' do
-  @random_name = %w(Amigo Oscar Viking).sample
+get '/named-cat' do
+  @name = params[:name] + params[:surname]
+  erb :index
+end
+
+get '/random-cat' do
+  @name = %w(Amigo Oscar Viking).sample
   erb :index
 end
