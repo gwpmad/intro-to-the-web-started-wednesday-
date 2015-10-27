@@ -7,4 +7,14 @@
   <div id="cat">
   <img src = http://bit.ly/1eze8aE>
   </div>
+  <div>
+    <% if @name == nil %>
+    <form action='/named-cat'>
+      <div>
+        <input type="text" name="name"/>
+        <input type="submit" value="Submit"/>
+      </div>
+    </form>
+    <% end %>
+  </div>
 </html>
