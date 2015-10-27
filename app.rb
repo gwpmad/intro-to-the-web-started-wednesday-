@@ -17,11 +17,5 @@ get '/penguin' do
 end
 
 get '/cat' do
-  # erb :index
-"
-  <div style='border: 20px dashed gray; width: 454px'>
-  <img src = http://bit.ly/1eze8aE>
-  </div>
-  Waddup!
-"
+  erb :index
 end
