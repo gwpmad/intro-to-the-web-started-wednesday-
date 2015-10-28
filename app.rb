@@ -17,12 +17,8 @@ get '/penguin' do
 end
 
 post '/named-cat' do
-  @name = p params[:name]
-  erb :index
-end
-
-get '/named-cat' do
-  @name = p params[:name]
+  p params
+  @name = params[:name]
   erb :index
 end
 
